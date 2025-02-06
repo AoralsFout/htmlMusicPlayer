@@ -22,7 +22,7 @@
 ## 安装步骤
 
 1. 在`<head>`中增加`<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>`
-2. 在网站末尾增加`<script src="https://aoralsfout.github.io/embed_music_player.js"></script>`
+2. 在网站末尾增加`<script src="https://cdn.jsdelivr.net/gh/Aoralsfout/htmlMusicPlayer/embed_music_player.js"></script>`
 3. 将 `database.sql` 文件中的 SQL 语句导入到您的数据库中，确保您的数据库文件已备份，避免造成损失。
 4. 复制getMusicInfo.php到您的引用目录中。
 5. 复制并修改databaseConnetConfig.php为您的数据库登陆数据。
