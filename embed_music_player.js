@@ -547,7 +547,7 @@ function embedMusicPlayer() {
 
     async function getMusicInfo() {
       try {
-        const response = await fetch("https://cdn.jsdelivr.net/gh/Aoralsfout/htmlMusicPlayer/getMusicInfo.php",
+        const response = await fetch("https://cdn.jsdelivr.net/gh/Aoralsfout/htmlMusicPlayer/getMusicInf.php",
         {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
