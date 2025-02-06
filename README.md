@@ -47,7 +47,7 @@
 
 ## 预览
 
-![预览](https://cdn.jsdelivr.net/gh/Aoralsfout/htmlMusicPlayer/perview.jpg)
+![预览](perview.jpg)
 
 ## 联系方式
 如果有任何问题或建议，请联系 sfout@qq.com。
