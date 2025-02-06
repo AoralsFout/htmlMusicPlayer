@@ -547,7 +547,7 @@ function embedMusicPlayer() {
 
     async function getMusicInfo() {
       try {
-        const response = await fetch("",
+        const response = await fetch("getMusicInfo.php",
         {
           headers: {
             "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
