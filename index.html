@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <title>音乐盒V2</title>
+  </head>
+
+  <body>
+    <canvas id="canvasCover" height="180" width="150"></canvas>
+    <div id="AoralsfoutMusic">
+      <audio id="audio">
+        <source src="music/1.mp3" type="audio/mpeg" />
+      </audio>
+      <audio id="chorus">
+        <source src="music/1.mp3" type="audio/mpeg" />
+      </audio>
+      <div id="musicBox">
+        <div id="toggleMusicFilter">
+          <i class="fa-solid fa-angles-right" id="toggleMusicBtm"></i>
+        </div>
+        <div id="toggleMusic"></div>
+        <div id="music_box">
+          <div id="music_box_filter"></div>
+          <canvas id="spectrum" width="600" height="320"></canvas>
+          <div id="music_box_left">
+            <div id="music_box_cover_box">
+              <div id="music_box_cover"></div>
+            </div>
+            <div id="music_box_info">
+              <span>TITLE&nbsp;:</span>
+              <div id="music_box_info_title"></div>
+              <span>AUTHOR&nbsp;:</span>
+              <div id="music_box_info_author"></div>
+              <span>ALBUM&nbsp;:</span>
+              <div id="music_box_info_album"></div>
+            </div>
+          </div>
+          <div id="music_box_right">
+            <div id="music_box_lyric"></div>
+            <div id="music_box_control">
+              <div id="progressBox">
+                <div id="timeProgress">00:00 / 00:00</div>
+                <div class="progress" id="progress">
+                  <div class="progressTrack" id="progressTrack">
+                    <div class="progressBar" id="progressBar"></div>
+                    <div class="progressThumb" id="progressThumb"></div>
+                  </div>
+                </div>
+              </div>
+              <div id="btmBox">
+                <div class="controlBtm" id="pervious">
+                  <i
+                    class="fa-solid fa-backward-step icon"
+                    style="font-size: 40px"
+                  ></i>
+                </div>
+                <div class="controlBtm" id="pause">
+                  <i class="fa-solid fa-pause icon" style="font-size: 40px"></i>
+                </div>
+                <div class="controlBtm" id="play" style="display: none">
+                  <i class="fa-solid fa-play icon" style="font-size: 34px"></i>
+                </div>
+                <div class="controlBtm" id="next">
+                  <i
+                    class="fa-solid fa-forward-step icon"
+                    style="font-size: 40px"
+                  ></i>
+                </div>
+              </div>
+              <div id="subLyric"></div>
+              <div id="bottom">
+                <div id="bottom-left">
+                  <div class="otherBtm" id="listBtm">
+                    <i
+                      class="fa-solid fa-bars icon"
+                      style="font-size: 19px"
+                    ></i>
+                  </div>
+                  <div id="volumeBox">
+                    <i class="fa-solid fa-volume-up icon" id="volumeIcon"></i>
+                    <div class="volume" id="volume">
+                      <div class="volumeTrack" id="volumeTrack">
+                        <div class="volumeBar" id="volumeBar"></div>
+                        <div class="volumeThumb" id="volumeThumb"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="bottom-right">
+                  <div class="otherBtm" id="random" style="display: none">
+                    <i
+                      class="fa-solid fa-shuffle icon"
+                      style="font-size: 19px"
+                    ></i>
+                  </div>
+                  <div class="otherBtm" id="loop" style="display: none">
+                    <i class="fa-solid fa-repeat icon" style="font-size: 19px">
+                    </i>
+                    <div class="loop-1">1</div>
+                  </div>
+                  <div class="otherBtm" id="order" style="display: none">
+                    <i
+                      class="fa-solid fa-repeat icon"
+                      style="font-size: 19px"
+                    ></i>
+                  </div>
+                  <div class="otherBtm" id="translate">
+                    <i class="fa-solid" style="font-size: 18px">译</i>
+                  </div>
+                  <div id="playState"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="music_list_box"></div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
