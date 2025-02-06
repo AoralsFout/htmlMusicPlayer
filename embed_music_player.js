@@ -119,7 +119,7 @@ function embedMusicPlayer() {
     // 加载音乐播放器的样式和脚本
     const styleLink = document.createElement("link");
     styleLink.rel = "stylesheet";
-    styleLink.href = "https://cdn.jsdelivr.net/gh/Aoralsfout/htmlMusicPlayer/style.css";
+    styleLink.href = "https://purge.jsdelivr.net/gh/Aoralsfout/htmlMusicPlayer/style.css";
     document.head.appendChild(styleLink);
 
     //复制于script.js
